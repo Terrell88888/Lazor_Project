@@ -3,7 +3,7 @@
 This project, part of EN 540.635 Software Carpentry, focuses on using Python to automatically solve the Lazor game available on iOS and Android. The objective is to generate both a visual solution and a text file output for each solution.
 
 ## Overview
-The Lazor puzzle solver reads configurations from .bff files and simulates the paths of lasers as they interact with different block types. It then identifies valid solutions that ensure all target points are hit. Each solution is output as both an image (.png) and a text file, making it straightforward to visualize and verify.
+The Lazor puzzle solver reads configurations from .bff files and simulates the paths of lasers as they interact with different block types. It then identifies valid solutions that ensure all target points are hit. Each solution is output an image (.png), making it straightforward to visualize and verify.
 
 ## How to Use
 1. Download main.py and ensure all .bff files are in the same folder..
