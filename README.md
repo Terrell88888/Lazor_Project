@@ -6,7 +6,7 @@ This project, part of EN 540.635 Software Carpentry, focuses on using Python to 
 The Lazor puzzle solver reads configurations from .bff files and simulates the paths of lasers as they interact with different block types. It then identifies valid solutions that ensure all target points are hit. Each solution is output an image (.png), making it straightforward to visualize and verify.
 
 ## How to Use
-1. Download main.py and ensure all .bff files are in the same folder..
+1. Download lazor.py and ensure all .bff files are in the same folder.
 2. Choose the puzzle you want to solve and run lazor.py to enter the file name of the puzzle.
 3. The program will generate a .png image showing the solution and print solution details to the console.
 
