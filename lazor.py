@@ -503,14 +503,14 @@ def main():
     Solves multiple Lazor puzzles and reports time taken for each.
     """
     bff_files = [
-        'D:\\Lazor_project\\bff_files\\dark_1.bff',
-        'D:\\Lazor_project\\bff_files\\mad_1.bff',
-        'D:\\Lazor_project\\bff_files\\mad_4.bff',
-        'D:\\Lazor_project\\bff_files\\mad_7.bff',
-        'D:\\Lazor_project\\bff_files\\numbered_6.bff',
-        'D:\\Lazor_project\\bff_files\\showstopper_4.bff',
-        'D:\\Lazor_project\\bff_files\\tiny_5.bff',
-        'D:\\Lazor_project\\bff_files\\yarn_5.bff'
+        'dark_1.bff',
+        'mad_1.bff',
+        'mad_4.bff',
+        'mad_7.bff',
+        'numbered_6.bff',
+        'showstopper_4.bff',
+        'tiny_5.bff',
+        'yarn_5.bff'
     ]
 
     total_start_time = time.time()
