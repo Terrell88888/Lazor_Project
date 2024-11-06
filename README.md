@@ -12,12 +12,34 @@ The Lazor puzzle solver reads configurations from .bff files and simulates the p
 
 ## Code Structure
 
-- `main.py`: Main script for solving puzzles.
-- `bff_convertor()`: Parses `.bff` files and extracts game configurations.
-- `Grid_part` **Class**: Manages the grid structure and block placements.
-- `Lazor_part` **Class**: Handles laser path calculations and interactions.
-- `image_output()`: Generates and saves a visual output of the solution.
-- 
+### **1. Core Classes**
+  - **Grid_Structure**: Manages the Lazor puzzle grid layout.
+  
+  - **Laser_Path**: Handles the movement of the laser in the grid and interaction with different block types.
+
+### **2. Main functions**
+
+  - **convert_bff(file_name):** Reads `.bff` puzzle configuration file and extracts key components such as grid layout, number of blocks, laser start and target points.
+  
+  - **parse_grid(lines, start_idx):** Parses the grid layout between "GRID START" and "GRID STOP" markers.
+  
+  - **validate() and auxiliary functions:**
+  - `validate()`: Validates the overall puzzle configuration.
+  - Auxiliary functions (`extract_block_count`, `expand_grid_with_boundaries`, etc.) support parsing and preparing puzzles for solving.
+
+### **3. Helper Functions**
+
+  - **find_fixed_positions():** Finds the positions of fixed blocks in the mesh.
+  - **solve_path()** and **solve_lazor()**: core functions that coordinate the puzzle solving process, generate block configurations, check solutions, and create output meshes.
+
+### **4. Image Generation Functions**
+
+  - **create_output_image()**: Generates an image of the solved puzzle, including laser paths and target points.
+
+   - **image_output()** Handles visualization of the grid, laser path, and target.
+
+
+
 ### Example:
 
 ```plaintext
@@ -78,5 +100,5 @@ The solution will generate:
 
 
 ## Contributors
-- Gangxiang Tang
-- Guanbo Wang: gwang66@jh.edu, gwang66
+- Gangxiang Tang: gtang11@jh.edu
+- Guanbo Wang: gwang66@jh.edu
