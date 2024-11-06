@@ -108,7 +108,7 @@ Tests such as file parsing, mesh generation, path calculation, performance evalu
   - Verify that the type of laser start point and target point is a list, and ensure that there is at least one laser start point and one target point.
 
 ### 2. `test_find_fixed_positions`:Check that the `find_fixed_positions` function finds the fixed block positions correctly.
-  - **Test content**.
+  - **Test content**:
   - Ensure that `find_fixed_positions` returns a list type.
   - Verify that each fixed position is a 2D coordinate, making sure it is formatted correctly.
 
@@ -118,7 +118,7 @@ Tests such as file parsing, mesh generation, path calculation, performance evalu
   - Make sure the generated grid has the same number of rows and columns as the original grid, verifying the consistency of the grid size.
 
 ### 4. `test_laser_path_finding`:Tests the laser path calculation functionality of the `Laser_Path` class.
-  - **Test content**.
+  - **Test content**:
   - Call the `calculate_laser_path` method to calculate the laser path.
   - Verify that all target points are hit by the laser, making sure that the path contains all target points.
 
@@ -128,12 +128,12 @@ Tests such as file parsing, mesh generation, path calculation, performance evalu
   - Verify that the number of blocks used is equal to the expected number of blocks, ensuring that the solution has the required number of blocks.
 
 ### 6. `test_performance`:Test the performance of the overall solution process.
-  - **Test content**.
+  - **Test content**:
   - Solve the problem using the `solve_lazor` method and calculate the completion time.
   - Verify that the solving time is less than 120 seconds to ensure that the algorithm completes in a reasonable amount of time.
 
 ### 7. `test_output_image`:Function to generate output images after checking the solution.
-  - **Test content**.
+  - **Test content**:
   - Call the `solve_lazor` method to solve the problem and check if the appropriate output image file is generated.
   - Verify that the image file exists and delete it after the test to clean up the environment.
 
