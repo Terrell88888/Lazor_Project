@@ -30,7 +30,7 @@ The Lazor puzzle solver reads configurations from .bff files and simulates the p
 ### **3. Helper Functions**
 
   - **find_fixed_positions():** Finds the positions of fixed blocks in the mesh.
-  - **solve_path()** and **solve_lazor()**: core functions that coordinate the puzzle solving process, generate block configurations, check solutions, and create output meshes.
+  - **solve_path()** and **solve_lazor()**: Core functions that coordinate the puzzle solving process, generate block configurations, check solutions, and create output meshes.
 
 ### **4. Image Generation Functions**
 
@@ -97,6 +97,45 @@ The solution will generate:
 - Console output indicating the time taken and solution details.
 ![214bfb4852070f30722f739ad9a8a82](https://github.com/user-attachments/assets/342c26b6-e731-497e-b114-476f81a6bcd4)
 
+## Unit Testing
+
+Tests such as file parsing, mesh generation, path calculation, performance evaluation and output validation ensured the correctness and reliability of the project's main functions.
+
+### 1. `test_convert_bff`:Verify the correctness of `convert_bff` function.
+  - **Test content**:
+  - Ensure that `grid` is a list and contains grid information.
+  - Confirm that the number of blocks of type A, B, and C are all non-negative.
+  - Verify that the type of laser start point and target point is a list, and ensure that there is at least one laser start point and one target point.
+
+### 2. `test_find_fixed_positions`:Check that the `find_fixed_positions` function finds the fixed block positions correctly.
+  - **Test content**.
+  - Ensure that `find_fixed_positions` returns a list type.
+  - Verify that each fixed position is a 2D coordinate, making sure it is formatted correctly.
+
+### 3. `test_grid_generation`:Verify the ability of the `Grid_Structure` class to generate a grid.
+  - **Test content**:
+  - Generate a new grid using the given A, B, C blocks.
+  - Make sure the generated grid has the same number of rows and columns as the original grid, verifying the consistency of the grid size.
+
+### 4. `test_laser_path_finding`:Tests the laser path calculation functionality of the `Laser_Path` class.
+  - **Test content**.
+  - Call the `calculate_laser_path` method to calculate the laser path.
+  - Verify that all target points are hit by the laser, making sure that the path contains all target points.
+
+### 5. `test_solve_path_solution`:Check the solving ability of the `solve_path` function.
+  - **Test content**:
+  - Ensure that the function can find a valid solution.
+  - Verify that the number of blocks used is equal to the expected number of blocks, ensuring that the solution has the required number of blocks.
+
+### 6. `test_performance`:Test the performance of the overall solution process.
+  - **Test content**.
+  - Solve the problem using the `solve_lazor` method and calculate the completion time.
+  - Verify that the solving time is less than 120 seconds to ensure that the algorithm completes in a reasonable amount of time.
+
+### 7. `test_output_image`:Function to generate output images after checking the solution.
+  - **Test content**.
+  - Call the `solve_lazor` method to solve the problem and check if the appropriate output image file is generated.
+  - Verify that the image file exists and delete it after the test to clean up the environment.
 
 
 ## Contributors
