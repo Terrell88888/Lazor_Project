@@ -8,7 +8,7 @@ class TestLazor(unittest.TestCase):
 
     def setUp(self):
         # Use sample configuration file
-        self.sample_file = 'mad.bff'
+        self.sample_file = 'mad_1.bff'
         self.grid, self.num_a_blocks, self.num_b_blocks, self.num_c_blocks, self.laser_start_points, self.target_positions, self.raw_grid = convert_bff(
             self.sample_file)
 
