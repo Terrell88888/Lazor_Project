@@ -10,11 +10,14 @@ The Lazor puzzle solver reads configurations from .bff files and simulates the p
 2. Choose the puzzle you want to solve and run main.py to enter the file name of the puzzle.
 3. The program will generate a .png image showing the solution and print solution details to the console.
 
-## Features
-1. BFF File Parsing: Reads and interprets board configurations, laser positions, and target points from .bff files, enabling accurate setup for each puzzle.
-2. Class-Based Design: Employs object-oriented principles to manage the grid structure, calculate laser paths, and handle block placement effectively.
-3. Output Solution: Produces a visual (.png) representation of the solved puzzle along with a text summary of the laser paths, making it easy to analyze the results.
+## Code Structure
 
+- `main.py`: Main script for solving puzzles.
+- `bff_convertor()`: Parses `.bff` files and extracts game configurations.
+- `Grid_part` **Class**: Manages the grid structure and block placements.
+- `Lazor_part` **Class**: Handles laser path calculations and interactions.
+- `image_output()`: Generates and saves a visual output of the solution.
+- 
 ### Example:
 
 ```plaintext
@@ -39,13 +42,7 @@ The solution will generate:
 - Console output indicating the time taken and solution details.
 ![214bfb4852070f30722f739ad9a8a82](https://github.com/user-attachments/assets/342c26b6-e731-497e-b114-476f81a6bcd4)
 
-## Code Structure
 
-- `main.py`: Main script for solving puzzles.
-- `bff_convertor()`: Parses `.bff` files and extracts game configurations.
-- `Grid_part` **Class**: Manages the grid structure and block placements.
-- `Lazor_part` **Class**: Handles laser path calculations and interactions.
-- `image_output()`: Generates and saves a visual output of the solution.
 
 ## Contributors
 - Gangxiang Tang
